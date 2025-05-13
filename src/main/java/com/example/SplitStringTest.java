@@ -1,3 +1,4 @@
+/*
 package sunlife.us.dc.messagecenter.plugin.gcsdocgengateway.sample.processor;
 
 
@@ -41,14 +42,16 @@ public class SplitStringTest {
         return o;//(o.toString().substring(1, o.toString().length()-1));
     }
 
-    /**
+    */
+/**
      * To get a value from string of hashmap by passing key that existed in Hashmap before converting to String.
      * Sample string: {fld_category=Principal category, test=test 1, fld_categoryID=1}
      *
      * @param string
      * @param key
      * @return value
-     */
+     *//*
+
     public static String getValueFromStringOfHashMap(String string, String key) {
 
 
@@ -62,7 +65,8 @@ public class SplitStringTest {
         return value;
     }
 
-    /*@Test
+    */
+/*@Test
     public void testStringHelper() {
         InteractiveCreateDocumentRequestContract contract = StringHelper.translateStringToObject(alpha);
         System.out.println( " print contract : Policies " + contract.getPolicy().get(0) + ":::" + contract.getPolicy().get(1));
@@ -70,7 +74,8 @@ public class SplitStringTest {
         System.out.println( " print contract : docType " + contract.getDoctype());
         System.out.println( " print contract : user " + contract.getUser());
         System.out.println( " print contract : case " + contract.getCaseNumber().get(0));
-    }*/
+    }*//*
+
 
     @Test
     public void testStringSplits() {
@@ -135,7 +140,9 @@ public class SplitStringTest {
 
     @Test
     public void testXMLGregorianCalendar() {
-        /* Create Date Object */
+        */
+/* Create Date Object *//*
+
         Date date = new Date();
         XMLGregorianCalendar xmlDate = null;
         GregorianCalendar gc = new GregorianCalendar();
@@ -192,9 +199,12 @@ public class SplitStringTest {
             System.out.println("hello");
         }
     }
-    /*
+    */
+/*
     public void testMap1() {
-       *//* HashMap<String, Object> mapQueryParams = new HashMap<>();
+       *//*
+*/
+/* HashMap<String, Object> mapQueryParams = new HashMap<>();
         mapQueryParams.put("doctype", "doc");
         mapQueryParams.put("party", "[[218454,267858]]");
         mapQueryParams.put("policy", new ArrayList<>().add("115"));
@@ -207,6 +217,8 @@ public class SplitStringTest {
         System.out.println(result);
         System.out.println(party);
         System.out.println(policy);*//*
+*/
+/*
 
         try {
             JSONObject jsonObject = new JSONObject("{policy=[[218445,204245]], party=[[115,266,57]], doctype=Claim Approval Letter, user=null, caseNumber=[NTN-19-DI-01]}");
@@ -216,7 +228,8 @@ public class SplitStringTest {
         }catch (JSONException err){
             System.out.println(err.getMessage());
         }
-    }*/
+    }*//*
+
 
     @Test
     public void testListItems() {
@@ -236,7 +249,8 @@ public class SplitStringTest {
 
     }
 
-   /* @Test
+   */
+/* @Test
     public void testjsonString(){
         String jsonString = null;
         try {
@@ -250,9 +264,11 @@ public class SplitStringTest {
         }
 
         System.out.println(jsonString);
-    }*/
+    }*//*
 
-    /*@Test
+
+    */
+/*@Test
     public void testmapjson() {
         JSONObject jsonObject = null;
         JSONArray array = null;
@@ -281,7 +297,8 @@ public class SplitStringTest {
             e.printStackTrace();
         }
 
-    }*/
+    }*//*
+
 
     @Test
     public void testStringList() {
@@ -374,9 +391,11 @@ public class SplitStringTest {
         if (documentId.matches("[0-9]+")) {
             System.out.println(" yes it is Number" + documentId);
         } else {
-            /*System.out.println(" No it is not a Number " + documentId);
+            */
+/*System.out.println(" No it is not a Number " + documentId);
             documentId = documentId.replaceAll("DG_", "");
-            System.out.println("  Number " + documentId);*/
+            System.out.println("  Number " + documentId);*//*
+
             if (documentId.startsWith("DG_")) {
                 String ddocumentId = documentId.replaceAll("DG_", "");
                 System.out.println("Inside condition " + ddocumentId);
@@ -392,10 +411,12 @@ public class SplitStringTest {
         Map<String, String> map = new HashMap<String, String>();
         String removeBrackets = jsonObjectString.substring(1, jsonObjectString.length() - 1);
         String[] keyValueStrings = removeBrackets.split(",");
-        /*for(int i =0; i < keyValueStrings.length ; i++) {
+        */
+/*for(int i =0; i < keyValueStrings.length ; i++) {
             String[] items =keyValueStrings[i].split("=");
             System.out.println("Key : " + items[0] + " and Value : " + items[1]);
-        }*/
+        }*//*
+
 
         for (String eachString : keyValueStrings) {
             String[] keyValue = eachString.split(" *= *");
@@ -456,7 +477,9 @@ public class SplitStringTest {
     }
 
     private XMLGregorianCalendar getXMLGregorianCalendar() {
-        /* Create Date Object */
+        */
+/* Create Date Object *//*
+
         Date date = new Date();
         XMLGregorianCalendar xmlDate = null;
         GregorianCalendar gc = new GregorianCalendar();
@@ -473,3 +496,4 @@ public class SplitStringTest {
         return xmlDate;
     }
 }
+*/

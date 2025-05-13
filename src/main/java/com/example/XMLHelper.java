@@ -1,3 +1,4 @@
+/*
 package sunlife.us.dc.messagecenter.plugin.gcsdocgengateway.utils;
 
 import com.ctc.wstx.exc.WstxIOException;
@@ -20,20 +21,24 @@ import javax.xml.stream.XMLStreamReader;
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
 
+*/
 /**
  * XMLHelper class.
- */
+ *//*
+
 public final class XMLHelper {
 
     private static Logger LOGGER = LogFactory.getLogger(XMLHelper.class);
 
-    /**
+    */
+/**
      * Marshal input Object to String xml.
      * 
      * @param type Class type to be marshaled.
      * @param object Object to be marshaled. 
      * @return String xml.
-     */
+     *//*
+
     public static String marshalObjToXml(final Class type, final Object object) {
         LOGGER.debug("XMLHelper.marshalObjToXml()");
         final StringWriter writer = new StringWriter();
@@ -50,14 +55,16 @@ public final class XMLHelper {
         return writer.toString();
     } 
 
-    /**
+    */
+/**
      * Unmarshal target element of input String xml to Class type object.
      * 
      * @param type Class type to unmarshal.
      * @param inputXml String input xml to unmarshal.
      * @param element String target element of input xml to unmarshal.  
      * @return Object object.
-     */
+     *//*
+
     public static Object unmarshalXmlToObj(final Class type, final String inputXml, final String element) {
         LOGGER.debug("XMLHelper.unmarshalXmlToObj()");
 
@@ -88,13 +95,15 @@ public final class XMLHelper {
         return object;
     }
     
-    /**
+    */
+/**
      * Get target element value of input String xml.
      * 
      * @param inputXml String input xml.
      * @param element String target element of input xml.  
      * @return String value.
-     */
+     *//*
+
     public static String getElementValue(final String inputXml, final String element) {
         //LOGGER.debug("XMLHelper.getElementValue()");
 
@@ -119,12 +128,14 @@ public final class XMLHelper {
         return value;
     }
     
-    /**
+    */
+/**
      * Encode String xml.
      * 
      * @param str xml to be encoded.
      * @return string value
-     */
+     *//*
+
     public static String encodeXmlAttribute(final String str) {
         if (str == null) {
             return null;
@@ -160,23 +171,27 @@ public final class XMLHelper {
         return encoded.toString();
     }
 
-    /**
+    */
+/**
      * Removes xml tag and ns2 prefix
      * @param input
      * @return
-     */
+     *//*
+
     public static String removeInvalidCharacters(String input) {
         String x = input.replaceAll("\\<\\?xml(.+?)\\?\\>", "").trim();
         return x;
     }
 
-    /**
+    */
+/**
      * @param inputXML
      * @param
      * @param
      * @return Object
      * @throws Exception
-     */
+     *//*
+
     public static Object unMarshallerXMLtoJavaObject(final String inputXML){
         try {
             JAXBContextFactory factory = JAXBContextFactory.getInstance();
@@ -200,13 +215,15 @@ public final class XMLHelper {
         return null;
     }
 
-    /**
+    */
+/**
      * @param inputXML
      * @param
      * @param
      * @return Object
      * @throws Exception
-     */
+     *//*
+
     public static Document convertStringToXMLDocument(final String inputXML){
 
         //Parser that produces DOM object trees from XML content
@@ -234,13 +251,15 @@ public final class XMLHelper {
         return input.replaceAll(precedingUTFCharactersReplacement,"");
     }
 
-    /**
+    */
+/**
      *
      * @param xml
      * @param cls
      * @return
      * @throws Exception
-     */
+     *//*
+
     public static Object transformWebComposerXmlToObject(final String xml, final Class cls) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(sunlife.us.dc.messagecenter.ws.webservice.impl.gcs.readdocdata.ReadDocData.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
@@ -272,8 +291,11 @@ public final class XMLHelper {
 
         return value;
     }
-    /**
+    */
+/**
      * Private constructor.
-     */
+     *//*
+
     private XMLHelper() { }
 }
+*/
