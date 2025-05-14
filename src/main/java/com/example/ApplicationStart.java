@@ -1,3 +1,4 @@
+/*
 package com.example;
 
 import com.example.inversionOfControl.Mobile;
@@ -21,3 +22,4 @@ public class ApplicationStart {
 		SpringApplication.run(ApplicationStart.class, args);
 	}
 }
+*/
