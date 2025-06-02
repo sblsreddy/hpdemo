@@ -60,9 +60,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.5.2</version>
         </dependency>
 
         <!-- To Convert json data into java objects we need jackson dependency-->
@@ -78,6 +78,13 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>2.8.7</version>
+        </dependency>
+
+        <!-- OpenCSV Library helps to convert csv to java objects, it handles edge cases like quoted fields, escaped characters, and different CSV formats more reliably  -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.7.1</version>
         </dependency>
     </dependencies>
 
