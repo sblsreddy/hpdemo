@@ -19,11 +19,19 @@ public class SridharsCsvtoObjectBuilder {
         Map<String, List<String>> result = convertCSVToMap(csvFilePath);
 
         // Print results
-        result.forEach((state, counties) -> {
-            System.out.println("State: " + state + ", Counties: " + counties.size());
-            // System.out.println("Counties: " + counties);
-            System.out.println("---");
-        });
+//        result.forEach((state, counties) -> {
+//            System.out.println("State: " + state + ", Counties: " + counties.size());
+//            // System.out.println("Counties: " + counties);
+//            //System.out.println("---");
+//        });
+        result.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey()) // Optional: sort by state name
+                .forEach(entry ->
+                        System.out.printf("Category: %-20s | Size: %d%n",
+                                entry.getKey(), entry.getValue().size())
+                );
+
+
     }
 
     public static Map<String, List<String>> convertCSVToMap(String filePath) {
